@@ -45,24 +45,15 @@ self.ecob = [ElasticodeOnBoarding new];
 
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+ama-zone.co is an app that enables you to learn the 
+1. How to use Elasticode on boarding 
+2. How to intigrate the SDK 
+3. How to manage and control your experiences VIA the dashboard 
+4. How to corrolate relevant experinces to relevant segments ( audiences ) 
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+Using our SDK,  here is a short Video 
+https://vimeo.com/elasticode/elasticode-sdk-download
 
-## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
