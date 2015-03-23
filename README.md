@@ -9,10 +9,10 @@ Elasticode on boarding example allows you to learn more about how you can person
 This repository includes the relevant project/app upon we have built this demo
 It includes 4 screens that are part of the on boarding, where we as developers are trying to figure out what is the best atrtegy to work around this ( with these assets ) 
 
-![alt 1stScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/1.jpg)
-![alt 2ndScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/2.jpg)
-![alt 3rdScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/3.jpg)
-![alt 4thScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/4.jpg)
+![alt 1stScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/1s.jpg)
+![alt 2ndScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/2s.jpg)
+![alt 3rdScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/3s.jpg)
+![alt 4thScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/4s.jpg)
 
 
 ## Code Example
