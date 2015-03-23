@@ -1,14 +1,47 @@
 # ama-zone-demo
-elasticode onBoarding example
+Elasticode onBoarding example
+( Graphic assets in this repository is relevant only for iPhone6 )
 
 
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+Elasticode on boarding example allows you to learn more about how you can personalize your on boarding experience, when it comes to what type of experinces to build and how to address different segments.
+This repository includes the relevant project/app upon we have built this demo
+It includes 4 screens that are part of the on boarding, where we as developers are trying to figure out what is the best atrtegy to work around this ( with these assets ) 
+
+![alt 1stScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/1.jpg)
+![alt 2ndScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/2.jpg)
+![alt 3rdScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/3.jpg)
+![alt 4thScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/4.jpg)
+
 
 ## Code Example
+Setting up the enviernemnt is easy, you can see it in our 90 seconds tutorial here 
+https://vimeo.com/elasticode/elasticode-sdk-download
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+Don't forget to sign up to our service, so you can start hacking with our SDK ( it's free ... ) 
+https://mc.elasticode.com/signUp.php
+
+Connecting the app key to the SDK is VIA the appDelegate : 
+```objective-c
+// setting up the property 
+@property (strong, nonatomic) ElasticodeOnBoarding* ecob;
+
+// and on the .m file :
+self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+self.ecob = [ElasticodeOnBoarding new];
+[self.ecob startOnBoradingOnWindow:self.window withElasticodeKey:@"<#app key#>" viewControllerGetterBlock:^UIViewController *{
+        UIStoryboard *mainStoryboard = 
+          [UIStoryboard storyboardWithName:@"<# Name of storyboard #>"
+          bundle: nil];
+          UIViewController *mainViewController = (UIViewController*)                
+[mainStoryboard instantiateViewControllerWithIdentifier: 
+         @"<# storyboard ID #>"];
+        return mainViewController;
+    }]; 
+```
+
+
 
 ## Motivation
 
