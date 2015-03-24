@@ -77,7 +77,21 @@ ECOnBoardingScreenTemplate5* screen1 = [[ECOnBoardingScreenTemplate5 alloc]init]
 ```
 
 ## Templates
+
+We have two types of templates:
+
+**Templates numbered 1-3** - These templates are configured based on their uniques structure, just as they appear in the images and their display
+
+
+
+
 ![alt Templates](http://elasticode-demo.s3.amazonaws.com/amazone.co/templates1.png)
+
+**Templates numbered 4-11** - These 8 templates are 4 specific templates that are branched out into 4 templates that are represented by 4 different structures only they are different in the fact that each of them own two main options 
+- Background with an image
+- Background with color 
+
+
 ![alt Templates with backgorund](http://elasticode-demo.s3.amazonaws.com/amazone.co/templates2.png)
 
 ## Motivation
