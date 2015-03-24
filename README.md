@@ -41,7 +41,44 @@ self.ecob = [ElasticodeOnBoarding new];
     }]; 
 ```
 
+Elasticode enables you to build personalized based experiences for you on boarding, for some specific scenarios we need to deal with the case of providing a default experince, once that if if there is no connectivity to sync or for any other reason would still popup and appear to the end user, as such we need to provide an **Experience**
 
+You can find all the template types and their corosponding structure and code here :
+http://docs.elasticode.com/v1.0/docs/ob-templates
+
+Here is an example of such a code block that would display one screen:
+
+```objective-c
+
+ECOnBoardingScreenTemplate5* screen1 = [[ECOnBoardingScreenTemplate5 alloc]init];
+    screen1.label.text = @"Be The Crowd!";
+    screen1.label.textColor = [UIColor colorWithRed:0.000 green:0.000 blue:0.000 alpha:1];
+    screen1.label.fontName = @"Helvetica-Light";
+    screen1.label.fontSize = 19;
+    screen1.ctaButton.show = YES;
+    screen1.ctaButton.type = 1;
+    screen1.ctaButton2.show = YES;
+    screen1.ctaButton2.type = 2;
+    screen1.ctaButton3.show = YES;
+    screen1.ctaButton3.type = 3;
+
+// we need to add the naned resources to all 4 sizes 
+// As a default, you can use the same size and we would adjsut it
+// (ratio might be a bit off though...)
+
+    [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"" forIPhone6Plus:@""];
+    screen1.ctaButton.actionName = @"Continue";
+
+// Action is important, it's the actual action that happens when someone clicks on the call-to-action button
+
+    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    return @[screen1];
+
+```
+
+## Templates
+![alt Templates](http://elasticode-demo.s3.amazonaws.com/amazone.co/templates1.png)
+![alt Templates with backgorund](http://elasticode-demo.s3.amazonaws.com/amazone.co/templates2.png)
 
 ## Motivation
 
