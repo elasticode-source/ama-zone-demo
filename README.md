@@ -5,9 +5,9 @@ Elasticode onBoarding example
 
 ## Synopsis
 
-Elasticode on boarding example allows you to learn more about how you can personalize your on boarding experience, when it comes to what type of experinces to build and how to address different segments.
+Elasticode on boarding example allows you to learn more about how you can personalize your on boarding experience, when it comes to what type of experiences to build and how to address different segments.
 This repository includes the relevant project/app upon we have built this demo
-It includes 4 screens that are part of the on boarding, where we as developers are trying to figure out what is the best atrtegy to work around this ( with these assets ) 
+It includes 4 screens that are part of the on boarding, where we as developers are trying to figure out what is the best strategy to work around this ( with these assets ) 
 
 ![alt 1stScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/1s.jpg)
 ![alt 2ndScreen](http://elasticode-demo.s3.amazonaws.com/amazone.co/2s.jpg)
@@ -16,7 +16,8 @@ It includes 4 screens that are part of the on boarding, where we as developers a
 
 
 ## Code Example
-Setting up the enviernemnt is easy, you can see it in our 90 seconds tutorial here 
+Setting up the environment is easy, you can see it in our 90 seconds tutorial here 
+
 https://vimeo.com/elasticode/elasticode-sdk-download
 
 Don't forget to sign up to our service, so you can start hacking with our SDK ( it's free ... ) 
@@ -41,7 +42,7 @@ self.ecob = [ElasticodeOnBoarding new];
     }]; 
 ```
 
-Elasticode enables you to build personalized based experiences for you on boarding, for some specific scenarios we need to deal with the case of providing a default experince, once that if if there is no connectivity to sync or for any other reason would still popup and appear to the end user, as such we need to provide an **Experience**
+Elasticode enables you to build personalized based experiences for you on boarding, for some specific scenarios we need to deal with the case of providing a default experience, once that if if there is no connectivity to sync or for any other reason would still popup and appear to the end user, as such we need to provide an **Experience**
 
 You can find all the template types and their corosponding structure and code here :
 http://docs.elasticode.com/v1.0/docs/ob-templates
@@ -62,8 +63,8 @@ ECOnBoardingScreenTemplate5* screen1 = [[ECOnBoardingScreenTemplate5 alloc]init]
     screen1.ctaButton3.show = YES;
     screen1.ctaButton3.type = 3;
 
-// we need to add the naned resources to all 4 sizes 
-// As a default, you can use the same size and we would adjsut it
+// we need to add the  resources to all 4 sizes 
+// As a default, you can use the same size and we would adjsust it
 // (ratio might be a bit off though...)
 
     [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"" forIPhone6Plus:@""];
@@ -98,9 +99,9 @@ We have two types of templates:
 
 ama-zone.co is an app that enables you to learn the 
 1. How to use Elasticode on boarding 
-2. How to intigrate the SDK 
+2. How to integrate the SDK 
 3. How to manage and control your experiences VIA the dashboard 
-4. How to corrolate relevant experinces to relevant segments ( audiences ) 
+4. How to correlate relevant experiences to relevant segments ( audiences ) 
 
 ## Installation
 
