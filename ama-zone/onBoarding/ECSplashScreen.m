@@ -29,7 +29,7 @@
 
     MONActivityIndicatorView *indicatorView = [[MONActivityIndicatorView alloc] init];
     indicatorView.delegate = self;
-    indicatorView.numberOfCircles = 5   ;
+    indicatorView.numberOfCircles = 5;
     indicatorView.radius = 20;
     indicatorView.internalSpacing = 3;
     

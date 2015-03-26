@@ -61,9 +61,12 @@ typedef NS_ENUM(NSInteger, CTAButtonType)
 };
 #define CTAButtonType_noText 5 // anything include and above it without text
 
+
+
 /**
  *  On borading button element
  */
+@class ECOnBoardingAction;
 @interface ECOnBoardingButtonElement : ECOnBoardingElement
 
 /** Show or hide the button, if YES button will appear */
@@ -93,13 +96,9 @@ typedef NS_ENUM(NSInteger, CTAButtonType)
 @property (nonatomic,assign) CTAButtonType type;
 
 /**
- *  Button action name to be displayed in the Managment console
- */
-@property (nonatomic,strong) NSString* actionName;
-/**
  *  Action block for this button
  */
-@property (nonatomic,strong) dispatch_block_t action;
+@property (nonatomic,strong) ECOnBoardingAction* actionObject;
 
 // Inner helpers:
 @property (nonatomic,strong, readonly) NSString* imageName;

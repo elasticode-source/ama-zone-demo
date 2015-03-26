@@ -319,7 +319,7 @@ typedef enum listOfOptionsType
 +(ECOnboardingViewController*) createOnBoardingWithScreens:(NSArray*) onBoardingScreens
                                                WithVersion:(NSString *)onBoardingVersion
                                          completionHandler:(dispatch_block_t) completionBlock
-                                         additionalActions:(NSDictionary*) additionalActions;
+                                         additionalActions:(NSArray*) additionalActions;
 +(void) defineOnBoardingWithVersion:(NSString*) onBoardingVersion templateIndex:(int) templateIndex;
 +(int) onBoardingTemplateTypeForVersion:(NSString*) onBoardingVersion;
 +(void) visitOnBoarding:(NSString*) onBoardingVersion;

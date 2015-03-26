@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1C3F5E31ABE879300726522 /* ElastiCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1C3F5DC1ABE879300726522 /* ElastiCode.bundle */; };
+		F1C3F5E41ABE879300726522 /* ElastiCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C3F5DD1ABE879300726522 /* ElastiCode.framework */; };
+		F1C3F5E51ABE879300726522 /* ECSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C3F5E01ABE879300726522 /* ECSplashScreen.m */; };
+		F1C3F5E61ABE879300726522 /* ElasticodeOnBoarding.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C3F5E21ABE879300726522 /* ElasticodeOnBoarding.m */; };
+		F1C3F5E81ABE89AD00726522 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C3F5E71ABE89AD00726522 /* Security.framework */; };
+		F1C3F5EA1ABE89B600726522 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C3F5E91ABE89B600726522 /* SystemConfiguration.framework */; };
+		F1C3F5EC1ABE89BC00726522 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C3F5EB1ABE89BC00726522 /* AVFoundation.framework */; };
+		F1C3F5EF1ABE8D8400726522 /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C3F5EE1ABE8D8400726522 /* MONActivityIndicatorView.m */; };
 		F1F000DC1ABE7F4000B8A6F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F000DB1ABE7F4000B8A6F8 /* main.m */; };
 		F1F000DF1ABE7F4000B8A6F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F000DE1ABE7F4000B8A6F8 /* AppDelegate.m */; };
 		F1F000E21ABE7F4000B8A6F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F000E11ABE7F4000B8A6F8 /* ViewController.m */; };
@@ -27,6 +35,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1C3F5DC1ABE879300726522 /* ElastiCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ElastiCode.bundle; sourceTree = "<group>"; };
+		F1C3F5DD1ABE879300726522 /* ElastiCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ElastiCode.framework; sourceTree = "<group>"; };
+		F1C3F5DF1ABE879300726522 /* ECSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSplashScreen.h; sourceTree = "<group>"; };
+		F1C3F5E01ABE879300726522 /* ECSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSplashScreen.m; sourceTree = "<group>"; };
+		F1C3F5E11ABE879300726522 /* ElasticodeOnBoarding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElasticodeOnBoarding.h; sourceTree = "<group>"; };
+		F1C3F5E21ABE879300726522 /* ElasticodeOnBoarding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElasticodeOnBoarding.m; sourceTree = "<group>"; };
+		F1C3F5E71ABE89AD00726522 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F1C3F5E91ABE89B600726522 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F1C3F5EB1ABE89BC00726522 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F1C3F5ED1ABE8D8400726522 /* MONActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONActivityIndicatorView.h; sourceTree = "<group>"; };
+		F1C3F5EE1ABE8D8400726522 /* MONActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONActivityIndicatorView.m; sourceTree = "<group>"; };
 		F1F000D61ABE7F4000B8A6F8 /* ama-zone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ama-zone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F000DA1ABE7F4000B8A6F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F000DB1ABE7F4000B8A6F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C3F5EC1ABE89BC00726522 /* AVFoundation.framework in Frameworks */,
+				F1C3F5EA1ABE89B600726522 /* SystemConfiguration.framework in Frameworks */,
+				F1C3F5E81ABE89AD00726522 /* Security.framework in Frameworks */,
+				F1C3F5E41ABE879300726522 /* ElastiCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1C3F5DE1ABE879300726522 /* onBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				F1C3F5ED1ABE8D8400726522 /* MONActivityIndicatorView.h */,
+				F1C3F5EE1ABE8D8400726522 /* MONActivityIndicatorView.m */,
+				F1C3F5DF1ABE879300726522 /* ECSplashScreen.h */,
+				F1C3F5E01ABE879300726522 /* ECSplashScreen.m */,
+				F1C3F5E11ABE879300726522 /* ElasticodeOnBoarding.h */,
+				F1C3F5E21ABE879300726522 /* ElasticodeOnBoarding.m */,
+			);
+			path = onBoarding;
+			sourceTree = "<group>";
+		};
 		F1F000CD1ABE7F4000B8A6F8 = {
 			isa = PBXGroup;
 			children = (
+				F1C3F5EB1ABE89BC00726522 /* AVFoundation.framework */,
+				F1C3F5E91ABE89B600726522 /* SystemConfiguration.framework */,
+				F1C3F5E71ABE89AD00726522 /* Security.framework */,
 				F1F000D81ABE7F4000B8A6F8 /* ama-zone */,
 				F1F000F21ABE7F4000B8A6F8 /* ama-zoneTests */,
 				F1F000D71ABE7F4000B8A6F8 /* Products */,
@@ -81,6 +120,9 @@
 		F1F000D81ABE7F4000B8A6F8 /* ama-zone */ = {
 			isa = PBXGroup;
 			children = (
+				F1C3F5DC1ABE879300726522 /* ElastiCode.bundle */,
+				F1C3F5DD1ABE879300726522 /* ElastiCode.framework */,
+				F1C3F5DE1ABE879300726522 /* onBoarding */,
 				F1F000DD1ABE7F4000B8A6F8 /* AppDelegate.h */,
 				F1F000DE1ABE7F4000B8A6F8 /* AppDelegate.m */,
 				F1F000E01ABE7F4000B8A6F8 /* ViewController.h */,
@@ -201,6 +243,7 @@
 			files = (
 				F1F000E51ABE7F4000B8A6F8 /* Main.storyboard in Resources */,
 				F1F000EA1ABE7F4000B8A6F8 /* LaunchScreen.xib in Resources */,
+				F1C3F5E31ABE879300726522 /* ElastiCode.bundle in Resources */,
 				F1F000E71ABE7F4000B8A6F8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C3F5EF1ABE8D8400726522 /* MONActivityIndicatorView.m in Sources */,
 				F1F000E21ABE7F4000B8A6F8 /* ViewController.m in Sources */,
 				F1F000DF1ABE7F4000B8A6F8 /* AppDelegate.m in Sources */,
+				F1C3F5E61ABE879300726522 /* ElasticodeOnBoarding.m in Sources */,
+				F1C3F5E51ABE879300726522 /* ECSplashScreen.m in Sources */,
 				F1F000DC1ABE7F4000B8A6F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +389,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ama-zone",
+				);
 				INFOPLIST_FILE = "ama-zone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,7 +404,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ama-zone",
+				);
 				INFOPLIST_FILE = "ama-zone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

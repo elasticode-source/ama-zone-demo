@@ -52,7 +52,7 @@
 #warning Choose a default onBoarding by uncommenting one of the following templates configurations.
     /*
      * For more information about templates
-     * visit: https://dash.readme.io/project/elasticode/v1.0/docs/ob-templates 
+     * visit: http://docs.elasticode.com/v1.0/docs/ob-templates
      */
 //    screens = [self template1];
 //    screens = [self template2];
@@ -73,10 +73,10 @@
                               [self handleOnboardingCompletion];
                           }
                           additionalActions:
-     @{
-       @"Show Video": ^{
+     @[
+       [ECOnBoardingAction createWithName:@"Show Video" action:^{
         [self showVideo];
-    }}];
+    }]]];
     onboardingVC.fadePageControlOnLastPage = YES;
     onboardingVC.view.backgroundColor = [UIColor colorWithRed:0.684 green:0.828 blue:0.827 alpha:1];
     self.window.rootViewController = onboardingVC;
@@ -86,6 +86,7 @@
     UIAlertView* av = [[UIAlertView alloc]initWithTitle:@"Video preview" message:@"Here you would add logic to display video content" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [av show];
 }
+
 -(NSArray*) template1
 {
     ECOnBoardingScreenTemplate1* screen1 = [[ECOnBoardingScreenTemplate1 alloc]init];
@@ -94,11 +95,10 @@
     screen1.label.fontName = @"TimeNewRomanPS-ItalicMT";
     screen1.label.fontSize = 15;
     screen1.ctaButton.show = YES;
-    screen1.ctaButton.type = 2;
+    screen1.ctaButton.type = CTAButtonType_withText_google;
     [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"" forIPhone6Plus:@""];
     screen1.backgroundColor = [UIColor colorWithRed:0.000 green:0.384 blue:0.627 alpha:1];
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template2
@@ -107,10 +107,9 @@
     screen1.label.text = @"Are You Ready?";
     screen1.label.textColor = [UIColor colorWithRed:0.349 green:0.341 blue:0.341 alpha:1];
     screen1.ctaButton.show = YES;
-    screen1.ctaButton.type = 1;
+    screen1.ctaButton.type = CTAButtonType_withText_facebook;
     [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"" forIPhone6Plus:@""];
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template3
@@ -126,12 +125,11 @@
     screen1.label3.textColor = [UIColor colorWithRed:0.486 green:0.408 blue:0.408 alpha:1];
     screen1.label3.fontName = @"HelveticaNeue-BoldItalic";
     screen1.ctaButton.show = YES;
-    screen1.ctaButton.type = 2;
+    screen1.ctaButton.type = CTAButtonType_withText_google;
     [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"" forIPhone6Plus:@""];
     screen1.overlayColor = [UIColor colorWithRed:1.000 green:1.000 blue:1.000 alpha:1];
     screen1.backgroundColor = [UIColor colorWithRed:0.878 green:0.882 blue:0.886 alpha:1];
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template4
@@ -142,13 +140,12 @@
     screen1.label.fontName = @"Palatino-Italic";
     screen1.label.fontSize = 18;
     screen1.ctaButton.show = YES;
-    screen1.ctaButton.type = 1;
+    screen1.ctaButton.type = CTAButtonType_withText_facebook;
     screen1.ctaButton2.show = YES;
-    screen1.ctaButton2.type = 2;
+    screen1.ctaButton2.type = CTAButtonType_withText_google;
     screen1.ctaButton3.show = NO;
     screen1.backgroundColor = [UIColor colorWithRed:1.000 green:0.976 blue:0.976 alpha:1];
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template5
@@ -160,9 +157,9 @@
     screen1.label.fontSize = 25;
     screen1.label.textOffsetY = 312;
     screen1.ctaButton.show = NO;
-    screen1.ctaButton.type = 1;
+    screen1.ctaButton.type = CTAButtonType_withText_facebook;
     screen1.ctaButton2.show = NO;
-    screen1.ctaButton2.type = 2;
+    screen1.ctaButton2.type = CTAButtonType_withText_google;
     screen1.ctaButton3.show = YES;
     screen1.ctaButton3.type = 0;
     screen1.ctaButton3.text = @"Let's get started";
@@ -171,8 +168,7 @@
     screen1.ctaButton3.fontSize = 30;
     screen1.ctaButton3.fontName = @"HelveticaNeue-light";
     [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"ScreenDeals_clean.jpg" forIPhone6Plus:@""];
-    screen1.ctaButton3.actionName = @"Continue";
-    screen1.ctaButton3.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton3.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template6
@@ -182,7 +178,7 @@
     screen1.label.fontName = @"HoeflerText-BlackItalic";
     screen1.label.fontSize = 30;
     screen1.ctaButton.show = YES;
-    screen1.ctaButton.type = 4;
+    screen1.ctaButton.type = CTAButtonType_withText_twitter;
     screen1.ctaButton2.show = YES;
     screen1.ctaButton2.fontName = @"HoeflerText-Black";
     screen1.ctaButton2.textColor = [UIColor colorWithRed:0.165 green:0.196 blue:0.294 alpha:1];
@@ -195,8 +191,7 @@
     screen1.ctaButton3.backgroundColor = [UIColor colorWithRed:0.780 green:0.800 blue:0.859 alpha:1];
     screen1.ctaButton3.fontSize = 20;
     screen1.ctaButton3.text = @"Sign in";
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template7
@@ -205,7 +200,7 @@
     screen1.label.text = @"Are You Ready?";
     screen1.label.textColor = [UIColor colorWithRed:0.349 green:0.341 blue:0.341 alpha:1];
     screen1.ctaButton.show = YES;
-    screen1.ctaButton.type = 1;
+    screen1.ctaButton.type = CTAButtonType_withText_facebook;
     screen1.ctaButton2.show = YES;
     screen1.ctaButton2.textColor = [UIColor colorWithRed:0.180 green:0.075 blue:0.063 alpha:1];
     screen1.ctaButton2.backgroundColor = [UIColor colorWithRed:0.859 green:0.792 blue:0.651 alpha:1];
@@ -217,8 +212,7 @@
     screen1.ctaButton3.fontSize = 20;
     screen1.ctaButton3.text = @"Sign in";
     [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"" forIPhone6Plus:@""];
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template8
@@ -229,10 +223,9 @@
     screen1.label2.textColor = [UIColor colorWithRed:0.329 green:0.220 blue:0.863 alpha:1];
     screen1.label2.fontSize = 20;
     screen1.ctaButton.show = YES;
-    screen1.ctaButton.type = 4;
+    screen1.ctaButton.type = CTAButtonType_withText_twitter;
     screen1.backgroundColor = [UIColor colorWithRed:0.698 green:0.298 blue:0.388 alpha:1];
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template9
@@ -246,10 +239,9 @@
     screen1.label2.fontName = @"HelveticaNeue-Bold";
     screen1.label2.fontSize = 20;
     screen1.ctaButton.show = YES;
-    screen1.ctaButton.type = 1;
+    screen1.ctaButton.type = CTAButtonType_withText_facebook;
     [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"" forIPhone6Plus:@""];
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template10
@@ -275,8 +267,7 @@
     screen1.ctaButton2.fontSize = 20;
     screen1.ctaButton2.text = @"Sign in";
     screen1.backgroundColor = [UIColor colorWithRed:0.314 green:0.137 blue:0.098 alpha:1];
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
 -(NSArray*) template11
@@ -303,8 +294,6 @@
     screen1.ctaButton2.fontSize = 20;
     screen1.ctaButton2.text = @"Sign in";
     [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"" forIPhone6Plus:@""];
-    screen1.ctaButton.actionName = @"Continue";
-    screen1.ctaButton.action = ^{ [self handleOnboardingCompletion]; };
+    screen1.ctaButton.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
-}
-@end
+}@end

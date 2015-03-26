@@ -22,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.ecob = [ElasticodeOnBoarding new];
 #warning add your app key here
-    [self.ecob startOnBoradingOnWindow:self.window withElasticodeKey:@"<#App key#>" viewControllerGetterBlock:^UIViewController *{
+    [self.ecob startOnBoradingOnWindow:self.window withElasticodeKey:@"h61rka41fyvwedpzk8go8uza" viewControllerGetterBlock:^UIViewController *{
         UIStoryboard *mainStoryboard =
         [UIStoryboard storyboardWithName:@"Main"
                                   bundle: nil];

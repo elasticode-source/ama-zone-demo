@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "ECOnBoardingElements.h"
+#import "ECOnBoardingAction.h"
 @class ECOnboardingViewController;
 @class ECOnBoardingButtonElement;
 @class ECOnBoardingSync;
