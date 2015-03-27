@@ -167,7 +167,10 @@
     screen1.ctaButton3.backgroundColor = [UIColor whiteColor];
     screen1.ctaButton3.fontSize = 30;
     screen1.ctaButton3.fontName = @"HelveticaNeue-light";
-    [screen1.image setImageNameForIPhone4:@"" forIPhone5:@"" forIPhone6:@"ScreenDeals_clean.jpg" forIPhone6Plus:@""];
+    [screen1.image setImageNameForIPhone4:@"ScreenDeals_clean4.jpg"
+                               forIPhone5:@"ScreenDeals_clean5.jpg"
+                               forIPhone6:@"ScreenDeals_clean6.jpg"
+                           forIPhone6Plus:@"ScreenDeals_clean6p.jpg"];
     screen1.ctaButton3.actionObject = [ECOnBoardingAction createWithName:@"Continue" action:^{ [self handleOnboardingCompletion]; }];
     return @[screen1];
 }
