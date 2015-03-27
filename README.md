@@ -4,15 +4,12 @@ Elasticode onBoarding example
 
 
 ## Synopsis
-
-<img align="right" src="http://elasticode-demo.s3.amazonaws.com/amazone.co/ama-zone-preview.gif">
-
 Elasticode on boarding example allows you to learn more,
 about how you can personalize your on boarding experience,  
 when it comes to what type of experiences to build and how to address different segments.  
 This repository includes the relevant project/app upon we have built this demo.  
-It includes 4 screens that are part of the on boarding, where we as developers are trying to figure out what is the best strategy to work around this (with these assets) 
-
+It includes 4 screens that are part of the on boarding, where we as developers are trying to figure out what is the best strategy to work around this (with these assets)  
+![preview-gif](http://elasticode-demo.s3.amazonaws.com/amazone.co/ama-zone-preview.gif)
 
 ## Code Example
 Setting up the environment is easy, you can see it in our 90 seconds tutorial 
@@ -106,5 +103,3 @@ ama-zone.co is an app that enables you to learn the
 
 Using our SDK,  here is a short Video 
 https://vimeo.com/elasticode/elasticode-sdk-download
-
-
